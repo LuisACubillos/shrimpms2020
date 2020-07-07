@@ -1,0 +1,34 @@
+# Material and Methods
+
+```{r parte_2, include=FALSE}
+#### Code for II: Materials and Methods ####
+```
+
+## Source of data and information
+
+We obtained the time series of spawning biomass and shrimp recruitment from [@CANALES2016360], who considered data from the northern and southern fishery unit in a spatial stock assessment model. For the analysis, we discarded the estimates of spawning biomass and recruitment for the years 1945 to 1960 because these early estimates do not account for variability but rather for expected recruitment. Besides, one of the climate indices began in 1968, conditioning the study period (see below).
+
+The variations in the recruitment of the northern and southern fishing units are identical, with slight differences in the time series. This is due to the stock assessment model that considers shrimp recruitment to be a function of the same signal and spatially segregated by a proportion that defines connectivity between areas [@CANALES2016360]. Using in this context, the sum of northern and southern recruitment in subsequent analyses.
+
+We used two climate indices to study the influence of environmental variability on shrimp recruitment, the Humboldt Current Index (HCI) [@Blanco2004], and the Southern Oscillation Index (SOI). We obtained the HCI from the website http://www.bluewater.cl/HCI/hci.html). This index measures the atmospheric circulation between Rapa Nui (27º6’16.8’’S, 109º21’37.7’’S) and Antofagasta (23º38’39’’S, 70º24’39’’S) and it is an index of the decadal climate variability of the Humboldt Current System. The SOI is a standardized index based on observed sea level pressure differences between Tahiti and Darwin, Australia (https://www.ncdc.noaa.gov/teleconnections/enso/indicators/soi/), which measures Walker’s atmospheric circulation. These indicators make it possible to detect decadal and interannual changes in the climate that could restructure the ecosystem, which is associated with long-lasting periods of hot or cold temperature anomalies, related to the approach or retreat of warm subtropical oceanic waters to the coast of Chile [@ALHEIT2004201].
+
+## Hake biomass as a proxy for predation on shrimp
+
+We used hake biomass as a proxy to study the effects of predation on nylon shrimp. To analyze the fraction of the biomass that influences the predation of nylon shrimp, we considered the biomass estimates of Chilean hake by age reported by @Tascheri2017 and covering the period 1968-2015. We obtained the age selection of Chilean hake preying on shrimp from the relationship between predator weight and prey weight using the Ursin size-selection index [@Ursin1973]. For this purpose, we used data on stomach contents of common hake documented by @Arancibiaetal1998, where we calculated prey size-selectivity using the following expression:
+
+$$\alpha(jx,is) = \exp \left (   -\frac{ ( \log(W_{x,j}/W_{s,i})-\eta )^2}{2\sigma^2} \right )$$
+
+where $W_{x,j}$ is the average weight of predator $x$ at age $j$, $W_{s,i}$ is the average weight of prey $s$ at age $i$. The constant $\eta$ represents the average weight ratio between prey and predator, and $\sigma$ represents the range of prey size in the predator's diet. Once obtained this index, we analyzed the age range of the Chilean hake affecting the size-selectivity of shrimp. 
+
+## Recruitment sensitivity
+
+We removed the mean from each time series of the variables used and divided it by the standard deviation. We used these anomalies to detect the sensitivity of shrimp recruitment to climatic indices HCI and SOI, and to hake biomass (H) at the time of formation of the annual classes (two years earlier). A proxy for increased sensitivity overtime was to calculate cumulative correlations over time. The cumulative correlation analysis began with the first 5 years of the series (1968-1972) and then added one year sequentially until all available years (1968-2015, n=48) were completed [@CAHUIN201388]. The critical correlation coefficients for the cumulative correlation decrease with the addition of each year, which allowed to know the significance of the cumulative correlation in time, starting from $r = ±0.878$ ($P = 0.025$, $df = 3$ years) to $r = ±0.288$ ($P = 0.025$, $df = 46$ years).
+
+## Modeling the shrimp recruitment rate
+
+We used Generalized Linear Model to model the shrimp recruitment rate as a function of the spawning stock, climate variables, and common hake biomass.  We used the log-recruitment rate $log(R_t/S_{t-ar})$ as a dependent variable, where $R_t$ is the recruitment at year $t$, $S_{t-ar}$ is the spawning biomass at year $t-ar$, and $ar$ is the age of recruitment ($ar = 2$). Spawning biomass was the sum of the north and south zones, i.e., $St = S_{t,north} + S_{t,south}$ [@CANALES2016360]. We analyzed the phase or lagging effects of climate variables and hake biomass. We consider a phasing effect when a variable acts in the year of recruitment and a lagging effect when a variable acts two years before recruitment, i.e., in the year of formation of the annual class. We utilized GLM with link identity [@McCullaghNelder1989] and the package MASS of @VenablesRipley:2002 and considered nine models differentiated in the combination of predictor variables. The best model was selected by applying the Akaike's information criterion (AIC) [@Akaike1973] and weighed according to @Buckland1997.  
+
+## Path diagram
+
+Structural equation modeling (SEM) allowed us to understand the phase or lagging relationship between nylon shrimp recruitment, climate indices, and hake biomass as a proxy for predation. This technique (SEM) is a statistical approach for parameterizing and testing causal models that describe hypothetical relationships between multiple variables, to solve a set of equations involved in a path diagram [@GraceBollen2005; @Graceetal:2010]. Because SEM, based on maximum likelihood, uses a correlation matrix, it assumes that all relationships are linear and additive [@GraceBollen2005]. As in the GAM models, the recruitment rate could be related to the effects of climate variability and predation in the phase (lag = 0, or direct effects), or in lag (lag = 2) during the year of formation of the annual classes.
+

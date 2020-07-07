@@ -1,0 +1,9 @@
+base
+nlme
+mgcv
+MASS
+ggplot2
+kableExtra
+docxtools
+knitr
+tibble

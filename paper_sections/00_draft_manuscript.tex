@@ -1,0 +1,855 @@
+\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[12pt]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provides euro and other symbols
+\else % if luatex or xelatex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\usepackage{hyperref}
+\hypersetup{
+            pdftitle={The recruitment dynamics of the nylon shrimp Heterocarpus reedi, effects of climate and predation off Chile},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm,headheight=12pt,letterpaper]{geometry}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{lineno}
+\usepackage{placeins}
+\usepackage{authblk}
+
+\linenumbers
+\linespread{1}
+\author[1]{Camila Sagua}
+\author[1,2,*]{Luis A. Cubillos}
+\author[3]{Cristian M. Canales}
+\author[4]{Ruben Alarcón-Muñoz}
+\affil[1]{Magister en Ciencias con mención Pesquerías, Facultad de Ciencias Naturales y Oceanográficas, Universidad de Concepción, Concepción, Chile.}
+\affil[2]{Centro de Investigación Oceanográfica COPAS Sur-Austral, Lab. EPOMAR y Departamento de Oceanografía, Universidad de Concepción, Casilla 160-C,Concepción, Chile.}
+\affil[3]{Escuela de Ciencias del Mar, Pontificia Universidad Católica de Valparaíso, Valparaíso, Chile.}
+\affil[4]{Doctorado en Ciencias con mención en Manejo de Recursos Acuaticos Renovables, Universidad de Concepción, Concepción, Chile.}
+\affil[*]{Corresponding author. Email: lucubillos@udec.cl}
+\linespread{1.5}
+\usepackage{lineno} \usepackage{placeins} \linenumbers \linespread{1.5}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+
+\title{The recruitment dynamics of the nylon shrimp \emph{Heterocarpus reedi},
+effects of climate and predation off Chile}
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+\maketitle
+
+\hypertarget{abstract}{%
+\section{Abstract}\label{abstract}}
+
+Climate variability and predation influence the fluctuations in the
+recruitment of exploited marine populations. This study analyses the
+dynamics of the recruitment of the nylon shrimp (\emph{Heterocarpus
+reedi} Bahamonde 1955) over the period 1968 and 2015, considering the
+influence of climate variability and the biomass of common hake
+(\emph{Merluccius gayi}), as a proxy for predation in its distribution
+area. We collected the Humboldt Current Index (HCI) and Southern
+Oscillation Index (SOI) time series as climate variables and estimates
+of recruitment and spawning biomass of nylon shrimp, as well as biomass
+of Chilean hake. Annual deviations in nylon shrimp recruitment showed
+increased sensitivity to climate variability from the late 1990s
+onwards, expressed through a significant cumulative correlation over
+time (\(P<0.05\)). Generalized Linear Models showed that climatic
+variables and biomass of common hake were responsible for the
+recruitment rate (\(r^2=0.873\), \(P<0.05\)). A path diagram with
+structural equation models (SEM) showed that the recruitment rate is
+being influenced by the greater or lesser biomass of common hake, either
+through the consumption of juveniles in the year of formation of the
+annual class or on adult spawners, in interaction with climate
+variability.
+
+\textbf{Key words}: Recruitment, shrimp, climate, predation,
+sensitivity, trawl fishery
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+In general, fishing and/or the environment influence the large
+fluctuations experienced by the stocks, directly or indirectly affecting
+the magnitude of recruitment, which expresses through the entry of
+juveniles into the exploitable fraction (Gómez et al., 2012; Hsieh et
+al., 2006). Likewise, the pre-recruitment phases can be sensitive to
+favorable or unfavorable environmental factors (Hidalgo et al., 2011;
+Perry et al., 2010; Planque et al., 2010). Fluctuations in recruitment
+are caused not only by climate forcing and fishing but also due to
+ecological interactions such as predator-prey ({\textbf{???}};
+{\textbf{???}}; {\textbf{???}}; {\textbf{???}}), particularly the
+shrimp-gadoid relationship (Björnsson et al., 2017, 2011; Drinkwater et
+al., 2010; Worm and Myers, 2003).
+
+Climate variability occurs on different time scales, from the seasonal,
+interannual cycle with irregular periods of 1 to 3 years associated with
+El Niño-Southern Oscillation (ENSO), aperiodic decadal variability
+between 5 to 50 years to centennial and longer-term periods (Chavez et
+al., 2003; Overland et al., 2010; Perry et al., 2010). There is evidence
+that this variability influences the status and functioning of marine
+ecosystems and is closely related to population distribution, migration,
+and abundance (Lehodey et al., 2006). It has also been shown that
+fishing and other human activities have an impact on exploited and
+unexploited species (Hsieh et al., 2006; Planque et al., 2010), and can
+modify the structure, size, and functioning of ecosystems (Cury et al.,
+2000).
+
+In the upwelling ecosystem of the Humboldt Current System, there have
+been seasonal and decadal changes in populations of small pelagic fish
+such as anchovy (\emph{Engraulis ringens}) and sardine (\emph{Sardinops
+sagax}), which demonstrate the almost immediate impact of the
+environment and synchrony over a wide latitudinal range (Alheit and
+Niquen, 2004; Cubillos et al., 2007; Yañez et al., 2008). In the
+central-southern zone, the inter-annual variability of ENSO influences
+pelagic fish populations, for example, on the recruitment of the common
+sardine \emph{Strangomera bentincki} (Gómez et al., 2012). El Niño and
+La Niña considerably modify the neritic environment, and we observed
+that in cold years (La Niña) there is an increase in the recruitment of
+typical sardines as a result of an increase in biological production
+(Parada, 2013). In turn, climatic conditions influence faunal changes in
+plankton, zooplankton, and predators, mainly in the pelagic ecosystem
+(Alheit and Niquen, 2004; Ayón et al., 2011; Chavez et al., 2003; van
+der Lingen et al., 2009; Xu et al., 2019), whose greater or lesser
+predation would have a direct effect on the benthic and demersal system
+(Cury et al., 2000). However, few studies have aimed at assessing the
+role of climate influence on benthic crustaceans distributed in deep
+waters over the continental platform and upper slope.
+
+Nylon shrimp inhabit the continental platform and slope along the coast
+of Chile, between 200 and 500 m deep, associated with the Peru-Chile
+Subsurface Current flowing towards the pole, and the mixing of water
+masses between the Antarctic Intermediate Water (oxygenated and cold
+water, 11-12 ºC) and the Equatorial Subsurface Water (O\(_2\)
+\textless{}1 ml L\(^{-1}\), 12-13 ºC, 35 psu) (Arana, 2012; Bahamonde
+and Henrı'quez, 1970; Silva, 2012). South of its distribution, river
+discharges, and upwelling events determine the availability of organic
+matter that could favor adult feeding. Likewise, the northward
+circulation of the Humboldt Current may explain the presence of
+juveniles in the north of its current distribution through processes of
+survival and recruitment by larval or juvenile dispersal (C Canales et
+al., 2016). C Canales et al. (2016) suggested that the shrimp population
+is likely to be a metapopulation structure with at least two subunits
+located north and south of 32°S, and whose connectivity would be
+explained by larval drift.
+
+The shrimp fishery is located between 25ºS and 37º10'S, with two stock
+units (C. M. Canales et al., 2016; Montenegro and Branco, 2016): a
+northern stock between 25ºS and 32ºS and a southern stock from 32ºS to
+37º10'S (Fig. 1). The fishery involves a fleet of small industrial
+trawlers on the slope and the continental platform. The available data
+have made it possible to evaluate this resource from 1940 to 2015
+through stock assessment models structured by length (C.M. Canales et
+al., 2016). Biomass indices are available from biomass evaluation by the
+swept area method, which show an increasing trend south of 32°S from
+2006 (Acuña et al., 2012). According to (C Canales et al., 2016),
+positive trends in biomass could be influenced by the reduction in
+exploitation levels, the closure of some fishing areas since 2000, and
+by the depletion of Chilean hake (\emph{Merluccius gayi gayi}) after
+2003. The common hake is one of the most abundant and important
+predators of the demersal system in which shrimp and prawns live (Arana
+and Williams, 1970; Arancibia and Neira, 2008; Cubillos, 2007), and it
+could be an additional factor influencing the variability of long-term
+recruitment of nylon shrimp.
+
+According to the above, understanding and taking into account these
+sources of variability and their interactions represent a challenge for
+modern fisheries management. This work aimed to evaluate the hypothesis
+that the changes observed in the recruitment and biomass of nylon shrimp
+could be influenced by their population dynamics and the trophic
+interaction with common hake in a changing environment. \FloatBarrier
+
+\hypertarget{material-and-methods}{%
+\section{Material and Methods}\label{material-and-methods}}
+
+\hypertarget{source-of-data-and-information}{%
+\subsection{Source of data and
+information}\label{source-of-data-and-information}}
+
+We obtained the time series of spawning biomass and shrimp recruitment
+from (C.M. Canales et al., 2016), who considered data from the northern
+and southern fishery unit in a spatial stock assessment model. For the
+analysis, we discarded the estimates of spawning biomass and recruitment
+for the years 1945 to 1960 because these early estimates do not account
+for variability but rather for expected recruitment. Besides, one of the
+climate indices began in 1968, conditioning the study period (see
+below).
+
+The variations in the recruitment of the northern and southern fishing
+units are identical, with slight differences in the time series. This is
+due to the stock assessment model that considers shrimp recruitment to
+be a function of the same signal and spatially segregated by a
+proportion that defines connectivity between areas (C.M. Canales et al.,
+2016). Using in this context, the sum of northern and southern
+recruitment in subsequent analyses.
+
+We used two climate indices to study the influence of environmental
+variability on shrimp recruitment, the Humboldt Current Index (HCI)
+(Blanco-Garcı'a, 2004), and the Southern Oscillation Index (SOI). The
+HCI measures the atmospheric circulation between Rapa Nui (27º6'16.8'`S,
+109º21'37.7'`S) and Antofagasta (23º38'39'`S, 70º24'39''S) and it is an
+index of the decadal climate variability of the Humboldt Current System
+\href{http://www.bluewater.cl/HCI/hci.html}{}. The SOI is a standardized
+index based on observed sea level pressure differences between Tahiti
+and Darwin, Australia
+\href{https://www.ncdc.noaa.gov/teleconnections/enso/indicators/soi/}{},
+which measures Walker's atmospheric circulation. These indicators make
+it possible to detect decadal and interannual changes in the climate
+that could restructure the ecosystem, which is associated with
+long-lasting periods of hot or cold temperature anomalies, related to
+the approach or retreat of warm subtropical oceanic waters to the coast
+of Chile (Alheit and Niquen, 2004).
+
+\hypertarget{hake-biomass-as-a-proxy-for-predation-on-shrimp}{%
+\subsection{Hake biomass as a proxy for predation on
+shrimp}\label{hake-biomass-as-a-proxy-for-predation-on-shrimp}}
+
+We used hake biomass as a proxy to study the effects of predation on
+nylon shrimp. To analyze the fraction of the biomass that influences the
+predation of nylon shrimp, we considered the biomass estimates of
+Chilean hake by age reported by Tascheri et al. (2017) and covering the
+period 1968-2015. We obtained the age selection of Chilean hake preying
+on shrimp from the relationship between predator weight and prey weight
+using the Ursin size-selection index (Ursin, 1973). For this purpose, we
+used data on stomach contents of common hake documented by Arancibia et
+al. (1998), where we calculated prey size-selectivity using the
+following expression:
+
+\[\alpha(jx,is) = \exp \left (   -\frac{ ( \log(W_{x,j}/W_{s,i})-\eta )^2}{2\sigma^2} \right )\]
+
+where \(W_{x,j}\) is the average weight of predator \(x\) at age \(j\),
+\(W_{s,i}\) is the average weight of prey \(s\) at age \(i\). The
+constant \(\eta\) represents the average weight ratio between prey and
+predator, and \(\sigma\) represents the range of prey size in the
+predator's diet. Once obtained this index, we analyzed the age range of
+the Chilean hake affecting the size-selectivity of shrimp.
+
+\hypertarget{recruitment-sensitivity}{%
+\subsection{Recruitment sensitivity}\label{recruitment-sensitivity}}
+
+We removed the mean from each time series of the variables used and
+divided it by the standard deviation. We used these anomalies to detect
+the sensitivity of shrimp recruitment to climatic indices HCI and SOI,
+and to hake biomass (H) at the time of formation of the annual classes
+(two years earlier). A proxy for increased sensitivity overtime was to
+calculate cumulative correlations over time. The cumulative correlation
+analysis began with the first 5 years of the series (1968-1972) and then
+added one year sequentially until all available years (1968-2015, n=48)
+were completed (Cahuin et al., 2013). The critical correlation
+coefficients for the cumulative correlation decrease with the addition
+of each year, which allowed to know the significance of the cumulative
+correlation in time, starting from \(r = ±0.878\) (\(P = 0.025\),
+\(df = 3\) years) to \(r = ±0.288\) (\(P = 0.025\), \(df = 46\) years).
+
+\hypertarget{modeling-the-shrimp-recruitment-rate}{%
+\subsection{Modeling the shrimp recruitment
+rate}\label{modeling-the-shrimp-recruitment-rate}}
+
+We used Generalized Linear Model to model the shrimp recruitment rate as
+a function of the spawning stock, climate variables, and common hake
+biomass. We used the log-recruitment rate \(log(R_t/S_{t-ar})\) as a
+dependent variable, where \(R_t\) is the recruitment at year \(t\),
+\(S_{t-ar}\) is the spawning biomass at year \(t-ar\), and \(ar\) is the
+age of recruitment (\(ar = 2\)). Spawning biomass was the sum of the
+north and south zones, i.e., \(St = S_{t,north} + S_{t,south}\) (C.M.
+Canales et al., 2016). We analyzed the phase or lagging effects of
+climate variables and hake biomass. We consider a phasing effect when a
+variable acts in the year of recruitment and a lagging effect when a
+variable acts two years before recruitment, i.e., in the year of
+formation of the annual class. We utilized GLM with link identity
+(McCullagh and Nelder, 1989) and the package MASS of Venables and Ripley
+(2002) and considered nine models differentiated in the combination of
+predictor variables. The best model was selected by applying the
+Akaike's information criterion (AIC) (Akaike, 1973) and weighed
+according to Buckland et al. (1997).
+
+\hypertarget{path-diagram}{%
+\subsection{Path diagram}\label{path-diagram}}
+
+Structural equation modeling (SEM) allowed us to understand the phase or
+lagging relationship between nylon shrimp recruitment, climate indices,
+and hake biomass as a proxy for predation. This technique (SEM) is a
+statistical approach for parameterizing and testing causal models that
+describe hypothetical relationships between multiple variables, to solve
+a set of equations involved in a path diagram (Grace et al., 2010; Grace
+and Bollen, 2005). Because SEM, based on maximum likelihood, uses a
+correlation matrix, it assumes that all relationships are linear and
+additive (Grace and Bollen, 2005). As in the GAM models, the recruitment
+rate could be related to the effects of climate variability and
+predation in the phase (lag = 0, or direct effects), or in lag (lag = 2)
+during the year of formation of the annual classes.
+
+\FloatBarrier
+
+\hypertarget{results}{%
+\section{Results}\label{results}}
+
+During the study period, the Humboldt Current Index (HCI) showed
+positive values in the periods 1970-1978 and 1997-2015, associated with
+a strengthening of the Pacific Anticyclone (Fig. 2). Between 1979 and
+1996, the index remained negative, implying a period of warmer
+conditions. In turn, the Southern Oscillation Index (SOI) shows high
+inter-annual variability with El Niño events expressed with negative
+values of the SOI in the years 1972, 1977-1980, 1982-84, 1986-87,
+1990-95, 1997-98, 2002-06, 2009, 2012, 2014 and 2015 (Fig. 2). It also
+identifies La Niña events (positive SOI values) in the years 1970,
+1973-76, 1981, 1985, 1988-89, 1996, 1999-2001, 2007-08, 2010-11 and
+2013. It should be noted that the length of a period in which negative
+values prevail between 1977 and 1997 is consistent with the same period
+identified in the HCI (Fig. 2).
+
+Anomalies of recruitment for both stocks were similar to each other,
+showing negative fluctuations for the period from 1976 to 1998, and then
+remaining at positive values (Fig. 3A). However, we observe fluctuations
+in the spawning biomass of the northern stock that differs from that of
+the southern stock, the latter being more fluctuating throughout the
+period where negative values prevail for years similar to those observed
+in the recruitments (1976-1998) (Fig. 3B).
+
+The Chilean hake biomass has a sustained increase from 1970 to mid-90s,
+dramatically decreasing from 2003 to 2004 and remain at low values from
+2005 to 2015. Thus, we observe opposite trends between the spawning
+biomass of shrimp and the biomass of common hake (Fig. 3C). Along with
+the above, from the model of predation hake-shrimp, the fraction of
+shrimp that goes from 0 to 3 years is depredated by all ages of common
+hake, however, from age 2 + we observe a higher selectivity by hake over
+4 years (Table 1).
+
+The recruitment was not sensitive to the variability represented by SOI
+throughout the study period (Fig. 5). However, the sensitivity began to
+be significant and positive with the HCI, mainly between 1981-1987 and
+1994-2013. The sensitivity of shrimp recruitment to changes in the
+biomass of common hake showed a significant negative correlation in the
+periods 1974-1975, 1978-1988, 1991-1994, and from 2005 to 2013.
+
+Out of nine GLM models, the models that considered shrimp spawning
+biomass and hake biomass in the year of recruitment, along with the
+climate indicator (HCI or SOI) in the year of annual class formation,
+better explained the variations in shrimp nylon recruitment during the
+study period (Table 2). The models M4, M5, and M6, which include the
+Chilean hake effects on the year of recruitment plus either delayed or
+direct effects of the HCI, were the models that best represented the
+variation in shrimp recruitment. However, of the models selected, the
+model with the lowest AIC was the M6 model, which considers the negative
+effects of the Chilean hake biomass directly on the recruitment rate,
+and to a lesser extent the indirect effects of the HCI on the year of
+recruitment (Table 2).
+
+The SEM analysis was based on the linear correlation between variables
+(Table 3) and showed that Chilean hake biomass (Hake) had significant
+negative effects on shrimp spawning biomass in the year of recruitment
+and annual-class formation (Hake.lag). To a lesser extent, we observed a
+lagged effect of the HCI on the spawning biomass (Figure 6). There is
+evidence that the predator (Hake) was negatively and significantly
+related to the spawning biomass in the year of recruitment, and in the
+shrimp recruitment rate, in turn, Hake.lag and HCI.lag related to the
+shrimp spawning biomass with a two-year lag, the first negatively and
+significantly, and the second positively, but with low significance.
+
+\FloatBarrier
+
+\hypertarget{discussion}{%
+\section{Discussion}\label{discussion}}
+
+The challenge for modern fisheries management is to understand and take
+into account environmental variables and their interactions with
+exploited populations, leading to a more holistic view of the processes
+that influence the dynamics of exploited marine populations. In this
+study, we found that the recruitment of nylon shrimp is being influenced
+by the higher or lower biomass of common hake, either through
+consumption of juveniles in the year of formation of the annual class or
+on adult spawners, in interaction with the interannual climate
+variability reflected through the ENSO-associated HCI during spawning.
+
+The low influence of the spawning biomass itself on the recruitment rate
+and the climatic indicators HCI and SOI on shrimp spawning biomass in
+the year of formation of the year class are highlighted, both in the
+path diagram (SEM) and in the GAM models. The year-to-year changes
+between the indicators show the close relationship between the climate
+indices and negative values for HCI (periods of warm conditions)
+compared to existing positive values for SOI (El Niño phase). However,
+HCI only manifests itself as a decadal trend in the prevailing
+environmental conditions, while SOI represents the interannual variation
+ENSO (El Niño-Southern Oscillation) (Blanco-Garcı'a, 2004).
+
+The climate variables analyzed here should be considered as indicating
+large-scale changes at the atmospheric level and in the ocean's climate
+through ocean-atmosphere interaction. The influence at the habitat level
+of the nylon shrimp on the continental slope is unknown. However,
+climatic influence could likely influence the alteration in the
+circulation patterns of the Peru-Chile Subsurface Current and the
+distribution of physical properties associated with the mixing of
+present water mass, i.e., Subsurface Equatorial and Antarctic
+Intermediate (Nelson S. and Neshyba, 1979). These water mass intensify
+or weaken during either El Niño or La Niña events, and influence the
+subsurface dynamics where the nylon shrimp live (Hormazabal et al.,
+2013).
+
+The significance of these indicators is conditional and increases when
+the incidence of common hake on spawning biomass in the year of
+formation, and the recruitment rate is incorporated. Nevertheless, from
+GLM models, we conclude that common hake would explain more than 90\% of
+the variations in the recruitment rate.Recruitment sensitivity analysis
+showed that common hake presented more considerable significance, which
+expressed itself through a significant negative correlation in the
+periods 1973-1975, 1977-1986, and from 2005 to 2011. These results are
+consistent with (C Canales et al., 2016) in that the increase (decrease)
+in shrimp biomass could be modulated in part by the depletion (increase)
+of common hake. The biomass of common hake showed an increasing trend in
+the first years of the series, with significant increases in 1972-1977,
+1980-1984, 1991-1996, and 1998-2000 (Tascheri et al., 2017). These
+periods coincide with the years of the highest association between hake
+and the recruitment of nylon shrimp. Opposing trends between the
+biomasses of common hake and spawning biomasses of nylon shrimp are
+consistent with findings by Worm and Myers (2003), who show that the
+abundance of northern shrimp (\emph{Pandalus Borealis}) was negatively
+related to Atlantic cod (\emph{Gadus morhua}) populations. These authors
+found that cod correlated with temperature, and they found that changes
+in predator populations can have substantial effects on prey populations
+in the ocean food networks and that the intensity of these interactions
+can be sensitive to changes in mean ocean temperature (Worm and Myers,
+2003). Björnsson et al. (2011) found that seasonal migratory activity of
+immature \emph{G. morhua} was affected both by the location of the local
+shrimp stock, and the seasonal and spatial differences in temperature.
+
+We found that the incidence of shrimp in the diet of hake is generally
+low (Arancibia et al., 1998; Cubillos et al., 2003), which could be
+related to deeper distribution of naylon shrimp. Nevertheless, size
+selectivity coefficients indicated that common hake from 2 to 4 years of
+age preys preferentially on 1 to 3-year-old nylon shrimp (shrimp
+juveniles, recruits, and spawning individuals, as reported by Canales et
+al. (1999)). These results are consistent with those found by Cubillos
+(2007), who conclude through the same analysis that hakes over 4 years
+old prey on red squat lobster (\emph{Pleuroncodes monodon}) and yellow
+squat lobster (\emph{Cervimunida johni}) over 2 years old. It is
+important to note that after 2003, the biomass of common hake decreased
+significantly and there was also a juvenilization of the age structure,
+supported by specimens from 2 to 5 years of age, in addition to a
+decrease in the size at maturity (Lillo et al., 2015). These demographic
+changes in the predator could relax probable predation effects favoring
+the recruitment of nylon shrimp.
+
+With the above, studies of the fauna accompanying the direct assessment
+cruises of common hake, point to nylon shrimp as one of the main species
+within the faunal group of the demersal assembly (Acuña et al., 2019;
+Lillo et al., 2015), the same occurs in the direct assessment cruises of
+shrimp, where common hake and prawns, make up the main species
+associated with the captures, with the former showing the most
+significant recurrence in the captures throughout the entire sampling
+area (Acuña et al., 2012, 2002, 2019; Arana et al., 2006).
+
+The aforementioned suggests that the interaction in the biological
+components would have a more significant impact on the biological
+processes of the component species than the prevailing environmental
+conditions.
+
+\hypertarget{credit-authors}{%
+\section{Credit authors}\label{credit-authors}}
+
+\textbf{Camila Sagua}: Conceptualization, Investigation, Data curation,
+Writing - Original draft preparation.
+
+\textbf{Luis A. Cubillos}: Project Management, Formal analysis,
+Methodology, Writing - Reviewing and Editing.
+
+\textbf{Cristian M. Canales}: Data curation,Formal analysis, Writing -
+Reviewing and Editing.
+
+\textbf{Ruben Alarcón}: Formal analysis, Writing-Reviewing and Editing.
+
+\hypertarget{acknowledgements}{%
+\section{Acknowledgements}\label{acknowledgements}}
+
+CS would like to thank to the Dirección de Postgrado of the Universidad
+de Concepción for a scholarship during postgraduate studies, and LC
+would like to thank to the COPAS Sur-Austral CONICYT PIA APOYO CCTE
+AFB170006 for partial fundings. All code used to generate this paper, as
+well as prior versions of this manuscript, are available at:
+\href{https://github.com/LuisACubillos/shrimp-climate-predation}{github.com/LuisACubillos/shrimp-climate-predation}.
+
+\FloatBarrier
+
+\hypertarget{bibliography}{%
+\section*{Bibliography}\label{bibliography}}
+\addcontentsline{toc}{section}{Bibliography}
+
+\hypertarget{refs}{}
+\leavevmode\hypertarget{ref-Acunaetal2012}{}%
+Acuña, E., Alarcón, R., Cortés, A., Arancibia, H., Cubillos, L., Cid,
+L., 2012. Evaluación directa de camarón nailon entre la ii y viii
+regiones, año 2011 (No. FIP 2011-02). Fondo de Investigación Pesquera y
+Acuicultura.
+
+\leavevmode\hypertarget{ref-Acunaetal:2002}{}%
+Acuña, E., Arancibia, H., Cid, L., Alarcón, R., Cubillos, L., Sepúlveda,
+A., Bodini, A., Bennett, X., Cabrera, M., Villarroal, J., León, R.,
+Wiff, R., Grau, R., Andrade, M., Casas, L., Rivera, D., Poblete, L.,
+Vásquez, G., 2002. Evaluación directa de camarón nailon entre la ii y
+viii regiones, año 2001 (Final Report No. FIP 2001-05). Fondo de
+Investigación Pesquera y Acuicultura.
+
+\leavevmode\hypertarget{ref-Acunaetal2019}{}%
+Acuña, E., Haye, P., Segovia, N., Arancibia, H., Sagua, C., Zuñiga, A.,
+Alarcón, R., Cortés, A., Cid, L., Petigas, P., 2019. Evaluación directa
+de camarón nailon entre la ii y viii regiones, año 2018 (Final Report).
+Instituto de Fomento Pesquero.
+
+\leavevmode\hypertarget{ref-Akaike1973}{}%
+Akaike, H., 1973. Information theory and an extension of the maximum
+likelihood principle, in: Petrov, B., Csaki, F. (Eds.), Second
+International Symposium on Information Theory. Akademiai Kiado, pp.
+267--281.
+
+\leavevmode\hypertarget{ref-ALHEIT2004201}{}%
+Alheit, J., Niquen, M., 2004. Regime shifts in the humboldt current
+ecosystem. Progress in Oceanography 60, 201--222.
+doi:\href{https://doi.org/https://doi.org/10.1016/j.pocean.2004.02.006}{https://doi.org/10.1016/j.pocean.2004.02.006}
+
+\leavevmode\hypertarget{ref-Arana2012}{}%
+Arana, P.M., 2012. Recursos pesqueros del mar de chile. Escuela de
+Ciencias del Mar, Pontificia Universidad Católica de Valparaı'so.
+
+\leavevmode\hypertarget{ref-Aranaetal:2006}{}%
+Arana, P.M., Ahumada, M., Guerrero, A., Melo, T., Queirolo, D.,
+Barbieri, M., Bahamonde, N., Canales, C., Quiroz, J., 2006. Evaluación
+directa de camarón nailon y gamba entre la ii y viii regiones, año 2005
+(Final Report No. FIP 2005-08). Fondo de Investigación Pesquera y
+Acuicultura.
+
+\leavevmode\hypertarget{ref-AranaWilliams1970}{}%
+Arana, P., Williams, S., 1970. Contribución al conocimiento del régimen
+alimentario de la merluza (merluccius gayi). Investigaciones Marinas 1,
+139--154.
+
+\leavevmode\hypertarget{ref-Arancibiaetal1998}{}%
+Arancibia, H., Catrilao, M., Farı'as, B., 1998. Evaluación de la demanda
+de alimento en merluza común y análisis de su impacto en pre-reclutas.
+(No. FIP 95-17). Fondo de Investigación Pesquera y Acuicultura.
+
+\leavevmode\hypertarget{ref-ArancibiaNeira2008}{}%
+Arancibia, H., Neira, S., 2008. Overview of the chilean hake (merluccius
+gayi) stock, a biomass forecast, and the jumbo squid (dosidicus gigas)
+predator-prey relationship off central chile (33ºS-39ºS). CalCOFI Rep.
+49, 104--115.
+
+\leavevmode\hypertarget{ref-Ayon2011}{}%
+Ayón, P., Swartzman, G., Espinoza, P., Bertrand, A., 2011. Long-term
+changes in zooplankton size distribution in the peruvian humboldt
+current system: Conditions favouring sardine or anchovy. Marine Ecology
+Progress Series 422, 211--222.
+
+\leavevmode\hypertarget{ref-Bahamonde:1970}{}%
+Bahamonde, N., Henrı'quez, G., 1970. Sinopsis de datos biológicos sobre
+el camarón nailon heterocarpus reedi, bahamonde 1955., in: Mistakidis,
+M.N. (Ed.), Proceedings of the World Scientific Conference on the
+Biology and Culture of Shrimps and Prawns, FAO Fishing Report. FAO; FAO,
+pp. 1607--1627.
+
+\leavevmode\hypertarget{ref-B:2017aa}{}%
+Björnsson, B., Burgos, J., Sólmundsson, J., Ragnarsson, S., Jónsdóttir,
+I., Skúladóttir, U., 2017. Effects of cod and haddock abundance on the
+distribution and abundance of northern shrimp. Marine Ecology Progress
+Series 572, 209--221.
+
+\leavevmode\hypertarget{ref-Bjornsson2011}{}%
+Björnsson, B., Reynisson, P., Solmundsson, J., Valdimarsson, H., 2011.
+Seasonal changes in migratory and predatory activity of two species of
+gadoid preying on inshore northern shrimp pandalus borealis. Journal of
+Fish Biology 78, 1110--1131.
+doi:\href{https://doi.org/10.1111/j.1095-8649.2011.02923.x}{10.1111/j.1095-8649.2011.02923.x}
+
+\leavevmode\hypertarget{ref-Blanco2004}{}%
+Blanco-Garcı'a, J.L., 2004. Inter-annual to inter-decadal variability of
+upwelling and anchovy population off northern chile (PhD thesis).
+Ocean/Earth/Atmos Sciences, Old Dominion University.
+
+\leavevmode\hypertarget{ref-Buckland1997}{}%
+Buckland, S.T., Burnham, K.P., Augustin, N.H., 1997. Model selection: An
+integral part of inference. Biometrics 53, 603--618.
+
+\leavevmode\hypertarget{ref-CAHUIN201388}{}%
+Cahuin, S.M., Cubillos, L.A., Escribano, R., Blanco{]}, J. {[}Luis,
+Ñiquen, M., Serra, R., 2013. Sensitivity of recruitment rates anchovy
+(engraulis ringens) to environmental changes in southern peru---northern
+chile. Environmental Development 7, 88--101.
+doi:\href{https://doi.org/https://doi.org/10.1016/j.envdev.2013.03.004}{https://doi.org/10.1016/j.envdev.2013.03.004}
+
+\leavevmode\hypertarget{ref-Canales2016aa}{}%
+Canales, C., Company, J., Arana, P., 2016. Population structure of nylon
+shrimp Heterocarpus reedi (crustacea: Caridea) and its relationship with
+environmental variables off chile. Latin American Journal of Aquatic
+Research 44, 144--154.
+doi:\href{https://doi.org/10.3856/vol44-issue1-fulltext-15}{10.3856/vol44-issue1-fulltext-15}
+
+\leavevmode\hypertarget{ref-CANALES2016360}{}%
+Canales, C., Company, J.B., Arana, P.M., 2016. Using a length-based
+stock assessment model to evaluate population structure hypotheses of
+nylon shrimp heterocarpus reedi (decapoda, caridea) exploited off
+central chile. Fisheries Research 183, 360--370.
+doi:\href{https://doi.org/https://doi.org/10.1016/j.fishres.2016.06.020}{https://doi.org/10.1016/j.fishres.2016.06.020}
+
+\leavevmode\hypertarget{ref-CANALES20161}{}%
+Canales, C.M., Company, J., Arana, P., 2016. Spatio-temporal modelling
+of the maturity, sex ratio, and physical condition of nylon shrimp
+heterocarpus reedi (decapoda, caridea), off central chile. Fisheries
+Research 179, 1--9.
+doi:\href{https://doi.org/https://doi.org/10.1016/j.fishres.2016.02.001}{https://doi.org/10.1016/j.fishres.2016.02.001}
+
+\leavevmode\hypertarget{ref-Canalesetal:1999}{}%
+Canales, C., Montenegro, C., Peñailillo, T., Pool, H., 1999. Evaluación
+indirecta del stock de camarón nailon en el litoral de la ii a viii
+regiones (Final Report No. FIP 97-24). Fondo de Investigación Pesquera y
+Acuicultura.
+
+\leavevmode\hypertarget{ref-Chavez217}{}%
+Chavez, F.P., Ryan, J., Lluch-Cota, S.E., C., M. Ñiquen, 2003. From
+anchovies to sardines and back: Multidecadal change in the pacific
+ocean. Science 299, 217--221.
+doi:\href{https://doi.org/10.1126/science.1075880}{10.1126/science.1075880}
+
+\leavevmode\hypertarget{ref-CUBILLOS2007}{}%
+Cubillos, C.A.A., Luis A AND Alarcoń, 2007. Selectividad por tamaño de
+las presas en merluza comuń (Merluccius gayi gayi), zona centro-sur de
+Chile (1992-1997). Investigaciones marinas 35, 55--69.
+
+\leavevmode\hypertarget{ref-Cubillos2007a}{}%
+Cubillos, L.A., Serra, R., Fréon, P., 2007. Synchronous pattern of
+fluctuation in three anchovy fisheries in the humboldt current system.
+Aquat. Living Resour. 20, 69--75.
+doi:\href{https://doi.org/10.1051/alr:2007017}{10.1051/alr:2007017}
+
+\leavevmode\hypertarget{ref-Cubillosetal:2003mgayi}{}%
+Cubillos, L., Rebolledo, H., Hernández, A., 2003. Prey composition and
+estimation of q/b for the chilean hake, merluccius gayi
+(gadiformes-merluccidae), in the central-south area off chile
+(34º--40ºS). Archive of Fishery and Marine Research 50, 271--286.
+
+\leavevmode\hypertarget{ref-Cury2000}{}%
+Cury, P., Bakun, A., Crawford, R.J.M., Jarre, A., Quiñones, R.A.,
+Shannon, L.J., Verheye, H.M., 2000. Small pelagics in upwelling systems:
+patterns of interaction and structural changes in ``wasp-waist''
+ecosystems. ICES Journal of Marine Science 57, 603--618.
+doi:\href{https://doi.org/10.1006/jmsc.2000.0712}{10.1006/jmsc.2000.0712}
+
+\leavevmode\hypertarget{ref-DRINKWATER2010374}{}%
+Drinkwater, K.F., Beaugrand, G., Kaeriyama, M., Kim, S., Ottersen, G.,
+Perry, R.I., Pörtner, H.-O., Polovina, J.J., Takasuka, A., 2010. On the
+processes linking climate to ecosystem changes. Journal of Marine
+Systems 79, 374--388.
+doi:\href{https://doi.org/https://doi.org/10.1016/j.jmarsys.2008.12.014}{https://doi.org/10.1016/j.jmarsys.2008.12.014}
+
+\leavevmode\hypertarget{ref-Gomez:2012}{}%
+Gómez, F., Montecinos, A., Hormazabal, S., Cubillos, L.A.,
+Correa-Ramirez, M., Chavez, F.P., 2012. Impact of spring upwelling
+variability off southern-central chile on common sardine (strangomera
+bentincki) recruitment. Fisheries Oceanography 21, 405--414.
+doi:\href{https://doi.org/10.1111/j.1365-2419.2012.00632.x}{10.1111/j.1365-2419.2012.00632.x}
+
+\leavevmode\hypertarget{ref-Graceetal:2010}{}%
+Grace, J.B., Anderson, T.M., Olff, H., Scheiner, S.M., 2010. On the
+specification of structural equation models for ecological systems.
+Ecological Monographs 80, 67--87.
+doi:\href{https://doi.org/10.1890/09-0464.1}{10.1890/09-0464.1}
+
+\leavevmode\hypertarget{ref-GraceBollen2005}{}%
+Grace, J.B., Bollen, K.A., 2005. Interpreting the results from multiple
+regression and structural equation models. Bulletin of the Ecological
+Society of America 86, 283--295.
+
+\leavevmode\hypertarget{ref-Hidalgo:2011aa}{}%
+Hidalgo, M., Rouyer, T., Molinero, J., Massutı', E., Moranta, J.,
+Guijarro, B., Stenseth, N.C., 2011. Synergistic effects of
+fishing-induced demographic changes and climate variation on fish
+population dynamics. Marine Ecology Progress Series 426, 1--12.
+
+\leavevmode\hypertarget{ref-Hormazabal:2013}{}%
+Hormazabal, S., Combes, V., Morales, C.E., Correa-Ramirez, M.A., Di
+Lorenzo, E., Nuñez, S., 2013. Intrathermocline eddies in the coastal
+transition zone off central chile (31--41\(\,^{\circ}\)S). Journal of
+Geophysical Research: Oceans 118, 4811--4821.
+doi:\href{https://doi.org/10.1002/jgrc.20337}{10.1002/jgrc.20337}
+
+\leavevmode\hypertarget{ref-Hsieh:2006aa}{}%
+Hsieh, C.-h., Reiss, C.S., Hunter, J.R., Beddington, J.R., May, R.M.,
+Sugihara, G., 2006. Fishing elevates variability in the abundance of
+exploited species. Nature 443, 859--862.
+doi:\href{https://doi.org/10.1038/nature05232}{10.1038/nature05232}
+
+\leavevmode\hypertarget{ref-Lehodey2006}{}%
+Lehodey, P., Alheit, J., Barange, M., Baumgartner, T., Beaugrand, G.,
+Drinkwater, K., Fromentin, J.-M., Hare, S.R., Ottersen, G., Perry, R.I.,
+Roy, C., Lingen, C.D. van der, Werner, F., 2006. Climate Variability,
+Fish, and Fisheries. Journal of Climate 19, 5009--5030.
+doi:\href{https://doi.org/10.1175/JCLI3898.1}{10.1175/JCLI3898.1}
+
+\leavevmode\hypertarget{ref-Lilloetal2015}{}%
+Lillo, S., Legua, J., Olivares, J., Saavedra, J., Molina, E., Rojas, M.,
+Angulo, J., Valenzuela, V., Nuñez, S., Vásquez, S., 2015. Evaluación
+directa de merluza común, 2014 (Final Report). Instituto de Fomento
+Pesquero.
+
+\leavevmode\hypertarget{ref-McCullaghNelder1989}{}%
+McCullagh, P., Nelder, J., 1989. Generalized linear models, Monographs
+on statistics and applied probability 37. Chapman; Hall.
+
+\leavevmode\hypertarget{ref-MONTENEGRO201648}{}%
+Montenegro, C., Branco, M., 2016. Bayesian state-space approach to
+biomass dynamic models with skewed and heavy-tailed error distributions.
+Fisheries Research 181, 48--62.
+doi:\href{https://doi.org/https://doi.org/10.1016/j.fishres.2016.03.021}{https://doi.org/10.1016/j.fishres.2016.03.021}
+
+\leavevmode\hypertarget{ref-S19791387}{}%
+Nelson S., S., Neshyba, S., 1979. On the southernmost extension of the
+peru-chile undercurrent. Deep Sea Research Part A. Oceanographic
+Research Papers 26, 1387--1393.
+doi:\href{https://doi.org/https://doi.org/10.1016/0198-0149(79)90006-2}{https://doi.org/10.1016/0198-0149(79)90006-2}
+
+\leavevmode\hypertarget{ref-OVERLAND2010305}{}%
+Overland, J.E., Alheit, J., Bakun, A., Hurrell, J.W., Mackas, D.L.,
+Miller, A.J., 2010. Climate controls on marine ecosystems and fish
+populations. Journal of Marine Systems 79, 305--315.
+doi:\href{https://doi.org/https://doi.org/10.1016/j.jmarsys.2008.12.009}{https://doi.org/10.1016/j.jmarsys.2008.12.009}
+
+\leavevmode\hypertarget{ref-PARADA2013}{}%
+Parada, B.A.H., Carolina AND Yannicelli, 2013. Variabilidad ambiental y
+recursos pesqueros en el PacÃfico suroriental: estado de la
+investigaciÃy desafÃos para el manejo pesquero. Latin american journal
+of aquatic research 41, 1--28.
+
+\leavevmode\hypertarget{ref-PERRY2010427}{}%
+Perry, R.I., Cury, P., Brander, K., Jennings, S., Möllmann, C., Planque,
+B., 2010. Sensitivity of marine systems to climate and fishing:
+Concepts, issues and management responses. Journal of Marine Systems 79,
+427--435.
+doi:\href{https://doi.org/https://doi.org/10.1016/j.jmarsys.2008.12.017}{https://doi.org/10.1016/j.jmarsys.2008.12.017}
+
+\leavevmode\hypertarget{ref-PLANQUE2010403}{}%
+Planque, B., Fromentin, J.-M., Cury, P., Drinkwater, K.F., Jennings, S.,
+Perry, R.I., Kifani, S., 2010. How does fishing alter marine populations
+and ecosystems sensitivity to climate? Journal of Marine Systems 79,
+403--417.
+doi:\href{https://doi.org/https://doi.org/10.1016/j.jmarsys.2008.12.018}{https://doi.org/10.1016/j.jmarsys.2008.12.018}
+
+\leavevmode\hypertarget{ref-Silva2012}{}%
+Silva, N., 2012. Recursos pesqueros del mar de chile, in: Arana, P.M.
+(Ed.),. Escuela de Ciencias del Mar, Pontificia Universidad Católica de
+Valparaı'so, pp. 39--52.
+
+\leavevmode\hypertarget{ref-Tascheri2017}{}%
+Tascheri, R., Gálvez, P., Sateler, J., 2017. Estatus y posibilidades de
+explotación biológicamente sustentables de los principales recursos
+pesqueros nacionales al año 2016: Merluza común, 2016. Instituto de
+Fomento Pesquero, Valparaı'so, Chile.
+
+\leavevmode\hypertarget{ref-Ursin1973}{}%
+Ursin, E., 1973. On the prey size preference of cod and dab. Medd. Dan.
+Fisk.-Havunders 7, 85--98.
+
+\leavevmode\hypertarget{ref-vanderLingen2009}{}%
+van der Lingen, C., Bertrand, A., Bode, A., Brodeur, R., Cubillos, L.,
+Espinoza, P., Friedland, K., Garrido, S., Irigoien, X., Miller, T.,
+Möllmann, C., Rodriguez-Sanchez, R., Tanaka, H., Temming, A., 2009.
+Trophic dynamics, in: Checkley, D., Alheit, J., Oozeki, Y., Roy, C.
+(Eds.),. Cambridge University Press, pp. 112--157.
+
+\leavevmode\hypertarget{ref-VenablesRipley:2002}{}%
+Venables, W., Ripley, B., 2002. Modern applied statistics with s, 4th
+edn. ed. Springer, New York.
+
+\leavevmode\hypertarget{ref-Worm:2003}{}%
+Worm, B., Myers, R.A., 2003. Meta-analysis of cod-shrimp interactions
+reveals top-down control in oceanic food webs. Ecology 84, 162--173.
+
+\leavevmode\hypertarget{ref-XU2019103229}{}%
+Xu, Y., Fu, C., Peña, A., Hourston, R., Thomson, R., Robinson, C.,
+Cleary, J., Daniel, K., Thompson, M., 2019. Variability of pacific
+herring (clupea pallasii) spawn abundance under climate change off the
+west coast of canada over the past six decades. Journal of Marine
+Systems 200, 103229.
+doi:\href{https://doi.org/https://doi.org/10.1016/j.jmarsys.2019.103229}{https://doi.org/10.1016/j.jmarsys.2019.103229}
+
+\leavevmode\hypertarget{ref-Yanez2008}{}%
+Yañez, E., Hormazábal, S., Silva, C., Montecinos, A., Barbieri, M.A.,
+Valdenegro, A., Órdenes, A., Gómez, F., 2008. Coupling between the
+environment and the pelagic resources exploited off northern chile:
+Ecosystem indicators and a conceptual model. Latin American Journal of
+Aquatic Research 36, 159--181.
+doi:\href{https://doi.org/10.3856/vol36-issue2-fulltext-3}{10.3856/vol36-issue2-fulltext-3}
+
+\end{document}

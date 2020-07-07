@@ -1,0 +1,88 @@
+---
+title: The recruitment dynamics of the nylon shrimp _Heterocarpus reedi_, effects
+  of climate and predation off Chile
+classoption: 12pt
+compact-title: yes
+output:
+  word_document:
+    reference_docx: reference_style_ms.docx
+  pdf_document:
+    fig_caption: yes
+    includes:
+      in_header: preamble.sty
+    keep_tex: yes
+documentclass: article
+geometry: left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm,headheight=12pt,letterpaper
+header-includes: \usepackage{lineno} \usepackage{placeins} \linenumbers \linespread{1.5}
+csl: elsevier-harvard.csl
+bibliography: ref_camaron.bib
+---
+
+```{r knitr_setup, include=FALSE, purl=FALSE}
+knitr::opts_chunk$set(echo = TRUE, 
+                      message=FALSE, 
+                      warning=FALSE, 
+                      cache=TRUE,
+                      autodep=TRUE,
+                      fig.path = "../figures/",
+                      #to handle renaming figures without indices.
+                      #From:https://github.com/yihui/knitr/issues/505
+                      fig.process = function(x) {
+                        x2 = sub('-\\d+([.][a-z]+)$', '\\1', x)
+                        if (file.rename(x, x2)) x2 else x
+                        }
+                      )
+```
+
+```{r setup, include=FALSE, cache=FALSE}
+####Setup ####
+#all the packages needed for this tutorial are listed here
+library(mgcv)
+library(MASS)
+library(ggplot2)
+library(kableExtra)
+library(docxtools)
+library(knitr)
+library(tibble)
+
+#Set the default theme for ggplot objects to theme_bw()
+theme_set(theme_bw())
+theme_update(panel.grid = element_blank())
+
+```
+
+# Abstract
+
+Climate variability and predation influence the fluctuations in the recruitment of exploited marine populations. This study analyses the dynamics of the recruitment of the nylon shrimp (_Heterocarpus reedi_ Bahamonde 1955) over the period 1968 and 2015, considering the influence of climate variability and the biomass of common hake (_Merluccius gayi_), as a proxy for predation in its distribution area. We collected the Humboldt Current Index (HCI) and Southern Oscillation Index (SOI) time series as climate variables and estimates of recruitment and spawning biomass of nylon shrimp, as well as biomass of Chilean hake. Annual deviations in nylon shrimp recruitment showed increased sensitivity to climate variability from the late 1990s onwards, expressed through a significant cumulative correlation over time ($P<0.05$). Generalized Linear Models showed that climatic variables and biomass of common hake were responsible for the recruitment rate ($r^2=0.873$, $P<0.05$). A path diagram with structural equation models (SEM) showed that the recruitment rate is being influenced by the greater or lesser biomass of common hake, either through the consumption of juveniles in the year of formation of the annual class or on adult spawners, in interaction with climate variability.
+
+**Key words**: Recruitment, shrimp, climate, predation, sensitivity, trawl fishery 
+
+```{r child = '01-intro.Rmd'}
+```
+\FloatBarrier
+```{r child = '02-materialandmethods.Rmd'}
+```
+\FloatBarrier
+```{r child = '03-results.Rmd'}
+```
+\FloatBarrier
+```{r child = '04-discussion.Rmd'}
+```
+
+# Credit authors
+
+**Camila Sagua**: Conceptualization, Investigation, Data curation, Writing - Original draft preparation.
+
+**Luis A. Cubillos**: Project Management, Formal analysis, Methodology, Writing - Reviewing and Editing.
+
+**Cristian M. Canales**: Data curation,Formal analysis, Writing - Reviewing and Editing.
+
+**Ruben Alarcón**: Formal analysis, Writing-Reviewing and Editing.
+
+# Acknowledgements
+
+CS would like to thank to the Dirección de Postgrado of the Universidad de Concepción for a scholarship during postgraduate studies, and LC would like to thank to the COPAS Sur-Austral CONICYT PIA APOYO CCTE AFB170006 for partial fundings. All code used to generate this paper, as well as prior versions of this manuscript, are available at: [github.com/LuisACubillos/shrimp-climate-predation](https://github.com/LuisACubillos/shrimpms2020). 
+
+\FloatBarrier
+
+# Bibliography
