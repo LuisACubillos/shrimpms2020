@@ -18,7 +18,7 @@ We used hake biomass as a proxy to study the effects of predation on nylon shrim
 
 $$\alpha(jx,is) = \exp \left (   -\frac{ ( \log(W_{x,j}/W_{s,i})-\eta )^2}{2\sigma^2} \right )$$
 
-where $W_{x,j}$ is the average weight of predator $x$ at age $j$, $W_{s,i}$ is the average weight of prey $s$ at age $i$. The constant $\eta$ represents the average weight ratio between prey and predator, and $\sigma$ represents the range of prey size in the predator's diet. Once obtained this index, we analyzed the age range of the Chilean hake affecting the size-selectivity of shrimp. 
+where $W_{x,j}$ is the average weight of predator $x$ at age $j$, $W_{s,i}$ is the average weight of prey $s$ at age $i$. We obtained the average weight at age of hake from @Tascheri2017, and the average weight at age of shrimp from von Bertalanffy growth parameters ($L_{\infty}=47.8$ mm, $K=0.19$ year$^{-1}$) and length-weight coefficients ($a=0.0004$, $b=3.034$). The constant $\eta$ represents the average weight ratio between prey and predator from stomach contents, and $\sigma$ represents the range of prey size in the predator's diet. Once obtained this index, we analyzed the age range of the Chilean hake affecting the size-selectivity of shrimp. 
 
 ## Recruitment sensitivity
 

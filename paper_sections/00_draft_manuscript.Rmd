@@ -53,7 +53,7 @@ theme_update(panel.grid = element_blank())
 
 # Abstract
 
-Climate variability and predation influence the fluctuations in the recruitment of exploited marine populations. This study analyses the dynamics of the recruitment of the nylon shrimp (_Heterocarpus reedi_ Bahamonde 1955) over the period 1968 and 2015, considering the influence of climate variability and the biomass of common hake (_Merluccius gayi_), as a proxy for predation in its distribution area. We collected the Humboldt Current Index (HCI) and Southern Oscillation Index (SOI) time series as climate variables and estimates of recruitment and spawning biomass of nylon shrimp, as well as biomass of Chilean hake. Annual deviations in nylon shrimp recruitment showed increased sensitivity to climate variability from the late 1990s onwards, expressed through a significant cumulative correlation over time ($P<0.05$). Generalized Linear Models showed that climatic variables and biomass of common hake were responsible for the recruitment rate ($r^2=0.873$, $P<0.05$). A path diagram with structural equation models (SEM) showed that the recruitment rate is being influenced by the greater or lesser biomass of common hake, either through the consumption of juveniles in the year of formation of the annual class or on adult spawners, in interaction with climate variability.
+Climate variability and predation influence the fluctuations in the recruitment of exploited marine populations. This study analyses the dynamics of the recruitment of the nylon shrimp (_Heterocarpus reedi_ Bahamonde 1955) over the period 1968 and 2015, considering the influence of climate variability and the biomass of common hake (_Merluccius gayi_), as a proxy for predation in its distribution area. We collected the Humboldt Current Index (HCI) and Southern Oscillation Index (SOI) time series as climate variables and estimates of recruitment and spawning biomass of nylon shrimp, as well as biomass of Chilean hake. Annual deviations in nylon shrimp recruitment showed increased sensitivity to climate variability from the late 1990s onwards, expressed through a significant cumulative correlation over time ($P<0.05$). Generalized Linear Models showed that hake and HCI explained the recruitment rate of shrimp by effects during the year of recruitment. A path diagram with structural equation models showed that the recruitment rate was influenced by the biomass of hake, either through the consumption of juveniles in the year of recruitment or on adult spawners, in interaction with decadal climate variability.
 
 **Key words**: Recruitment, shrimp, climate, predation, sensitivity, trawl fishery 
 
@@ -69,15 +69,13 @@ Climate variability and predation influence the fluctuations in the recruitment 
 ```{r child = '04-discussion.Rmd'}
 ```
 
-# Credit authors
+# Authors
 
-**Camila Sagua**: Conceptualization, Investigation, Data curation, Writing - Original draft preparation.
+**Camila Sagua**: Conceptualization, Investigation, Data curation, Writing - Original draft preparation. **Luis A. Cubillos**: Project Management, Formal analysis, Methodology, Writing - Reviewing and Editing. **Cristian M. Canales**: Data curation,Formal analysis, Writing - Reviewing and Editing. **Ruben Alarcón**: Formal analysis, Writing-Reviewing and Editing.
 
-**Luis A. Cubillos**: Project Management, Formal analysis, Methodology, Writing - Reviewing and Editing.
+# Declaration of Competing Interest
 
-**Cristian M. Canales**: Data curation,Formal analysis, Writing - Reviewing and Editing.
-
-**Ruben Alarcón**: Formal analysis, Writing-Reviewing and Editing.
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
 
 # Acknowledgements
 
