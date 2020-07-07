@@ -2,7 +2,7 @@
 
 This is the repository for the paper "The recruitment dynamics of the nylon shrimp *Heterocarpus reedi*, effects of climate and predation off Chile". This paper is currently submitted to Fisheries Research journal.
 
-# Credit authors
+## Credit authors
 
 **Camila Sagua**: Conceptualization, Investigation, Data curation, Writing - Original draft preparation.
 
